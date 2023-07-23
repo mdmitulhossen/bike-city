@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biker-City</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <style type="text/tailwindcss">
-        @layer components {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biker-City</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <style type="text/tailwindcss">
+    @layer components {
           .bikebtn{
-            @apply  border-0 px-6 font-bold text-white hover:bg-transparent hover:border-2 hover:border-[#E76F51] hover:text-[#E76F51]  bg-[#E76F51]
+            @apply  border-0 px-6 font-bold text-white hover:bg-transparent hover:border-2 hover:border-[#E76F51] hover:text-[#E76F51]  bg-[#E76F51] cursor-pointer
           }
         }
       </style>
@@ -21,85 +21,228 @@
 
 
 
-    <script>
-        tailwind.config = {
-            theme: {
-                fontFamily: {
-                    'poppins': ['Poppins', 'sans-serif'],
-                },
-                screens: {
-                    'sm': '576px',
-                    // => @media (min-width: 576px) { ... }
-                    'md': '768px',
-                    // => @media (min-width: 768px) { ... }
-                    'lg': '1024px',
-                    // => @media (min-width: 1024px) { ... }
-                    'xl': '1280px',
-                    // => @media (min-width: 1280px) { ... }
-                    '2xl': '1400px',
-                    // => @media (min-width: 1536px) { ... }
-                }
-            }
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          'poppins': ['Poppins', 'sans-serif'],
+        },
+        screens: {
+          'sm': '576px',
+          // => @media (min-width: 576px) { ... }
+          'md': '768px',
+          // => @media (min-width: 768px) { ... }
+          'lg': '1024px',
+          // => @media (min-width: 1024px) { ... }
+          'xl': '1280px',
+          // => @media (min-width: 1280px) { ... }
+          '2xl': '1400px',
+          // => @media (min-width: 1536px) { ... }
         }
-    </script>
+      }
+    }
+  </script>
 
 
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="font-poppins">
-    <header class="hero h-[500px] max-w-[1440px] mx-auto bg-[url(./images/others/latest1.png)] bg-no-repeat  bg-cover p-0 relative">
-     
-       
-        <div class="hero-overlay bg-opacity-80 "></div>
-        <!-- navbar -->
-        <nav class="navbar bg-transparent absolute top-3 px-6  md:px-16 lg:px-[150px]">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <label tabindex="0" class="  md:hidden ">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="white"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Home</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>News</a></li>
-                  <li><a>Contact</a></li>
-                </ul>
-              </div>
-              <a class=" normal-case text-xl md:text-2xl lg:text-4xl font-bold text-white ml-4 md:ml-0">Bike <span class="text-[#E76F51]">City</span></a>
-            </div>
-            <div class="navbar-end hidden md:flex">
-              <ul class="cursor-pointer lg:space-x-8 space-x-5 menu-horizontal px-1 text-white font-semibold">
-                <li class="hover:text-[#E76F51]"><a>Home</a></li>
-                <li class="hover:text-[#E76F51]"><a>Shop</a></li>
-                <li class="hover:text-[#E76F51]"><a>News</a></li>
-                <li class="hover:text-[#E76F51]"><a>Contact</a></li>
-              </ul>
-              <div class="ml-6">
-                <a class="bikebtn py-2 rounded-lg">LogIn</a>
-              </div>
-            </div>
-            <div class="navbar-end md:hidden">
-                <a class="bikebtn py-2 rounded-lg">LogIn</a>
-              </div>
-          </nav>
+  <header
+    class="hero h-[500px] max-w-[1440px] mx-auto bg-[url(./images/others/latest1.png)] bg-no-repeat  bg-cover p-0 relative">
 
-        <div class="text-neutral-content  w-full md:justify-start px-6 md:px-16 lg:px-[150px] mt-10">
-            <div class="md:w-8/12">
-                <h1 class="mb-5 text-5xl font-bold lg:text-6xl">Keep Your Ride Safe<br> At Every Time</h1>
-                <p class="mb-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor 
-                    do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet..</p>
-                <button class="btn bikebtn">Purchase</button>
+
+    <div class="hero-overlay bg-opacity-80 "></div>
+    <!-- navbar -->
+    <nav class="navbar bg-transparent absolute top-3 px-6  md:px-16 lg:px-[150px]">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="  md:hidden ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="white">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>Shop</a></li>
+            <li><a>News</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <a class=" normal-case text-xl md:text-2xl lg:text-4xl font-bold text-white ml-4 md:ml-0">Bike <span
+            class="text-[#E76F51]">City</span></a>
+      </div>
+      <div class="navbar-end hidden md:flex">
+        <ul class="cursor-pointer lg:space-x-8 space-x-5 menu-horizontal px-1 text-white font-semibold">
+          <li class="hover:text-[#E76F51]"><a>Home</a></li>
+          <li class="hover:text-[#E76F51]"><a>Shop</a></li>
+          <li class="hover:text-[#E76F51]"><a>News</a></li>
+          <li class="hover:text-[#E76F51]"><a>Contact</a></li>
+        </ul>
+        <div class="ml-6">
+          <a class="bikebtn py-2 rounded-lg cursor-pointer">LogIn</a>
+        </div>
+      </div>
+      <div class="navbar-end md:hidden">
+        <a class="bikebtn py-2 rounded-lg">LogIn</a>
+      </div>
+    </nav>
+
+    <div class="text-neutral-content  w-full md:justify-start px-6 md:px-16 lg:px-[150px] mt-10">
+      <div class="md:w-8/12">
+        <h1 class="mb-5 text-5xl font-bold lg:text-6xl">Keep Your Ride Safe<br> At Every Time</h1>
+        <p class="mb-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+          do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+          amet..</p>
+        <button class="btn bikebtn">Purchase</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- main section -->
+  <main class="max-w-[1440px] mx-auto px-6  md:px-16 lg:px-[150px]">
+    <!-- Featured Bike section -->
+    <section class="mt-24">
+      <div class="text-center">
+        <h1 class="text-3xl font-bold text-center md:text-5xl lg:text-6xl">Featured Bikes In This Year</h1>
+        <h6 class="text-center border-b-2 border-[#E76F51] inline-block text-[#E76F51] text-sm font-medium mb-10">Best
+          bike collection</h6>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 justify-between items-center gap-10 md:grid-cols-3">
+        <div><img class="w-full" src="./images/slider/bike2.png" alt=""></div>
+        <div><img class="w-full" src="./images/slider/bike3.png" alt=""></div>
+        <div><img class="w-full" src="./images/slider/bike4.png" alt=""></div>
+      </div>
+    </section>
+
+    <!-- Leatest Bike Blog -->
+    <section class="mt-24">
+      <div class="text-center mb-10">
+        <h1 class="text-3xl font-bold text-center md:text-5xl lg:text-6xl">Latest Bike Blog</h1>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 justify-between items-center gap-5 lg:grid-cols-3">
+        <div class="card shadow-xl">
+          <figure class="px-3 pt-3">
+            <img class="w-full" src="./images/others/latest1.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body px-3 pt-3">
+            <h2 class="card-title text-2xl">Ducati XDIAVEL S-73</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+            <div class="card-actions mt-3">
+              <button class="bikebtn py-2 rounded-lg">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="card shadow-xl">
+          <figure class="px-3 pt-3">
+            <img class="w-full" src="./images/others/latest2.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body px-3 pt-3">
+            <h2 class="card-title text-2xl">Motorcycles & Scooters</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+            <div class="card-actions mt-3">
+              <button class="bikebtn py-2 rounded-lg">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="card shadow-xl">
+          <figure class="px-3 pt-3">
+            <img class="w-full" src="./images/others/latest3.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body px-3 pt-3">
+            <h2 class="card-title ">2021 Honda CBR500R</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+            <div class="card-actions mt-3">
+              <button class="bikebtn py-2 rounded-lg">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Section -->
+    <section class="mt-24">
+      <div class="text-center mb-10">
+        <h1 class="text-3xl font-bold text-center md:text-5xl lg:text-6xl">Latest Bike Blog</h1>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 justify-between items-center gap-5 lg:grid-cols-3">
+       <div class="p-8 border rounded-md border-[#DEDEDE] shadow-lg">
+        <div class="">
+            <div class="flex justify-center">
+              <img class="h-[150px] w-[150px]" src="./images/others/user-1.png" alt="">
+            </div>
+            <div class="text-center space-y-3">
+              <p class=" mt-4 text-[#6C6C6C]">Slate helps you see how 
+                many more days you need 
+                to work to reach your financial 
+                goal for the month and year.</p>
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                </div>
+
+                <p class="text-[#23A6F0] text-sm font-medium">Regina Miles</p>
+                <p class="text-[#252B42] font-semibold">Banker</p>
             </div>
         </div>
-    </header>
-  
+       </div>
+       <div class="p-8 border rounded-md border-[#DEDEDE] shadow-lg">
+        <div class="">
+            <div class="flex justify-center">
+              <img class="h-[150px] w-[150px]" src="./images/others/user-2.png" alt="">
+            </div>
+            <div class="text-center space-y-3">
+              <p class=" mt-4 text-[#6C6C6C]">Slate helps you see how 
+                many more days you need 
+                to work to reach your financial 
+                goal for the month and year.</p>
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                </div>
 
+                <p class="text-[#23A6F0] text-sm font-medium">Regina Miles</p>
+                <p class="text-[#252B42] font-semibold">Banker</p>
+            </div>
+        </div>
+       </div>
+       <div class="p-8 border rounded-md border-[#DEDEDE] shadow-lg">
+        <div class="">
+            <div class="flex justify-center">
+              <img class="h-[150px] w-[150px]" src="./images/others/user-3.png" alt="">
+            </div>
+            <div class="text-center space-y-3">
+              <p class=" mt-4 text-[#6C6C6C]">Slate helps you see how 
+                many more days you need 
+                to work to reach your financial 
+                goal for the month and year.</p>
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                </div>
 
-    <main></main>
-    <footer></footer>
+                <p class="text-[#23A6F0] text-sm font-medium">Regina Miles</p>
+                <p class="text-[#252B42] font-semibold">Banker</p>
+            </div>
+        </div>
+       </div>
+        
+      
+      </div>
+    </section>
+  </main>
+  <footer></footer>
 </body>
 
 </html>
